@@ -20,9 +20,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-PROJECT_ID = os.getenv("BQ_PROJECT_ID", "mo-snowflake-bigquery-poc")
-DATASET_ID = os.getenv("BQ_DATASET_ID", "test")
-LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION", "europe-southwest1")
+PROJECT_ID = os.getenv("BQ_PROJECT_ID")
+DATASET_ID = os.getenv("BQ_DATASET_ID")
+LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION")
 
 # Initialize BigQuery client
 client = bigquery.Client(project=PROJECT_ID)
