@@ -66,9 +66,9 @@ Este directorio contiene datos de ejemplo para el sistema de gestión de estudia
 
    Debe contener:
    ```
-   BQ_PROJECT_ID=mo-snowflake-bigquery-poc
+   BQ_PROJECT_ID=<GCP PROJECT>
    BQ_DATASET_ID=students
-   GOOGLE_CLOUD_LOCATION=europe-southwest1
+   GOOGLE_CLOUD_LOCATION=<LOCATION>
    ```
 
 4. **Ejecutar el script de carga:**
