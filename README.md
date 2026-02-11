@@ -1,6 +1,6 @@
-# Education Assistant Agent - ESIC Corporate
+# Education Assistant Agent
 
-Agente de inteligencia artificial desarrollado con **Google Agent Development Kit (ADK)** para el Servicio de Atención al Cliente (SAC) de ESIC Corporate. Este agente proporciona atención automatizada a estudiantes y aspirantes de programas de Máster y formación ejecutiva.
+Agente de inteligencia artificial desarrollado con **Google Agent Development Kit (ADK)** para el Servicio de Atención al Cliente (SAC) de Educational Institution. Este agente proporciona atención automatizada a estudiantes y aspirantes de programas de Máster y formación ejecutiva.
 
 ## Descripción
 
