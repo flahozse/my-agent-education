@@ -41,7 +41,7 @@ async def search_esic_information(query: str, tool_context: ToolContext, focus_d
 
     Examples:
         - search_esic_information("ESIC Master en Marketing Digital plan de estudios")
-        - search_esic_information("ESIC Medellín fechas de inicio programas ejecutivos")
+        - search_esic_information("ESIC fechas de inicio programas ejecutivos")
         - search_esic_information("ESIC proceso de admisión requisitos")
     """
     # If focus_domain is True, add site restriction to search primarily in ESIC domains

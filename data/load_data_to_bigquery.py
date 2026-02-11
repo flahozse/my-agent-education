@@ -80,7 +80,7 @@ def create_dataset():
     except NotFound:
         dataset = bigquery.Dataset(dataset_id)
         dataset.location = LOCATION
-        dataset.description = "Dataset for ESIC Corporate Medellín student information"
+        dataset.description = "Dataset for ESIC Corporate student information"
 
         dataset = client.create_dataset(dataset, timeout=30)
         print(f"✓ Created dataset {dataset_id}")
