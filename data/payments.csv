@@ -1,0 +1,52 @@
+payment_id,student_id,payment_date,amount,payment_method,status,concept,due_date
+PAY001,STU001,2024-01-10,2500000,Transferencia Bancaria,Pagado,Matrícula Primer Semestre,2024-01-15
+PAY002,STU001,2024-02-05,1500000,Tarjeta de Crédito,Pagado,Cuota Febrero 2024,2024-02-10
+PAY003,STU001,2024-03-02,1500000,Transferencia Bancaria,Pagado,Cuota Marzo 2024,2024-03-10
+PAY004,STU001,,1500000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY005,STU002,2024-01-12,3500000,PSE,Pagado,Matrícula MBA,2024-01-15
+PAY006,STU002,2024-02-08,2000000,Transferencia Bancaria,Pagado,Cuota Febrero 2024,2024-02-10
+PAY007,STU002,2024-03-07,2000000,PSE,Pagado,Cuota Marzo 2024,2024-03-10
+PAY008,STU002,,2000000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY009,STU003,2024-02-01,2800000,Tarjeta de Crédito,Pagado,Matrícula Primer Semestre,2024-02-01
+PAY010,STU003,2024-03-05,1600000,Tarjeta de Crédito,Pagado,Cuota Marzo 2024,2024-03-10
+PAY011,STU003,,1600000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY012,STU004,2024-01-30,3000000,Transferencia Bancaria,Pagado,Matrícula Programa Ejecutivo,2024-02-01
+PAY013,STU004,2024-03-03,1800000,Transferencia Bancaria,Pagado,Cuota Marzo 2024,2024-03-10
+PAY014,STU004,,1800000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY015,STU005,2024-01-10,2600000,PSE,Pagado,Matrícula Primer Semestre,2024-01-15
+PAY016,STU005,2024-02-04,1550000,PSE,Pagado,Cuota Febrero 2024,2024-02-10
+PAY017,STU005,2024-03-01,1550000,PSE,Pagado,Cuota Marzo 2024,2024-03-10
+PAY018,STU005,,1550000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY019,STU006,2024-02-10,2400000,Transferencia Bancaria,Pagado,Matrícula Primer Semestre,2024-02-15
+PAY020,STU006,2024-03-12,1400000,Tarjeta de Crédito,Pagado,Cuota Marzo 2024,2024-03-15
+PAY021,STU006,,1400000,,Pendiente,Cuota Abril 2024,2024-04-15
+PAY022,STU007,2024-02-12,2500000,PSE,Pagado,Matrícula Primer Semestre,2024-02-15
+PAY023,STU007,2024-03-14,1500000,PSE,Pagado,Cuota Marzo 2024,2024-03-15
+PAY024,STU007,,1500000,,Pendiente,Cuota Abril 2024,2024-04-15
+PAY025,STU008,2023-07-25,3000000,Transferencia Bancaria,Pagado,Matrícula Segundo Semestre 2023,2023-08-01
+PAY026,STU008,2024-02-06,1800000,Transferencia Bancaria,Pagado,Cuota Febrero 2024,2024-02-10
+PAY027,STU008,2024-03-05,1800000,Transferencia Bancaria,Pagado,Cuota Marzo 2024,2024-03-10
+PAY028,STU008,,1800000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY029,STU009,2023-07-28,3500000,PSE,Pagado,Matrícula MBA,2023-08-01
+PAY030,STU009,2024-02-09,2000000,PSE,Pagado,Cuota Febrero 2024,2024-02-10
+PAY031,STU009,2024-03-08,2000000,PSE,Pagado,Cuota Marzo 2024,2024-03-10
+PAY032,STU009,,2000000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY033,STU010,2024-01-08,2800000,Tarjeta de Crédito,Pagado,Matrícula Primer Semestre,2024-01-15
+PAY034,STU010,2024-02-02,1600000,Tarjeta de Crédito,Pagado,Cuota Febrero 2024,2024-02-10
+PAY035,STU010,2024-03-04,1600000,Tarjeta de Crédito,Pagado,Cuota Marzo 2024,2024-03-10
+PAY036,STU010,,1600000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY037,STU011,2023-07-20,2600000,Transferencia Bancaria,Pagado,Matrícula Segundo Semestre 2023,2023-08-01
+PAY038,STU011,2024-01-15,1550000,Transferencia Bancaria,Pagado,Cuota Enero 2024,2024-01-20
+PAY039,STU012,2024-01-28,3000000,PSE,Pagado,Matrícula Programa Ejecutivo,2024-02-01
+PAY040,STU012,2024-03-06,1800000,PSE,Pagado,Cuota Marzo 2024,2024-03-10
+PAY041,STU012,,1800000,,Pendiente,Cuota Abril 2024,2024-04-10
+PAY042,STU013,2024-01-09,2500000,Transferencia Bancaria,Pagado,Matrícula Primer Semestre,2024-01-15
+PAY043,STU013,2024-02-10,1500000,Transferencia Bancaria,Vencido,Cuota Febrero 2024,2024-02-10
+PAY044,STU013,,1500000,,Vencido,Cuota Marzo 2024,2024-03-10
+PAY045,STU014,2024-02-13,2400000,Tarjeta de Crédito,Pagado,Matrícula Primer Semestre,2024-02-15
+PAY046,STU014,2024-03-16,1400000,Tarjeta de Crédito,Pagado,Cuota Marzo 2024,2024-03-15
+PAY047,STU014,,1400000,,Pendiente,Cuota Abril 2024,2024-04-15
+PAY048,STU015,2023-07-26,3000000,PSE,Pagado,Matrícula Segundo Semestre 2023,2023-08-01
+PAY049,STU015,2024-02-07,1800000,PSE,Pagado,Cuota Febrero 2024,2024-02-10
+PAY050,STU015,2024-03-09,1800000,PSE,Pagado,Cuota Marzo 2024,2024-03-10
+PAY051,STU015,,1800000,,Pendiente,Cuota Abril 2024,2024-04-10

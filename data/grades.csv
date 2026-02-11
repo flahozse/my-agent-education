@@ -1,0 +1,88 @@
+grade_id,student_id,course_name,course_code,grade,credits,academic_period,status
+GRD001,STU001,Marketing Estratégico,MKT-101,4.5,3,2024-1,Aprobado
+GRD002,STU001,Analítica Digital,MKT-102,4.2,3,2024-1,Aprobado
+GRD003,STU001,Estrategias de Contenido,MKT-103,4.8,3,2024-1,Aprobado
+GRD004,STU001,SEO y SEM,MKT-104,4.3,3,2024-1,Aprobado
+GRD005,STU001,Redes Sociales y Comunidades,MKT-105,4.6,3,2024-1,Aprobado
+GRD006,STU001,Email Marketing,MKT-106,4.4,3,2024-1,Aprobado
+GRD007,STU002,Dirección Estratégica,MBA-101,4.7,4,2024-1,Aprobado
+GRD008,STU002,Finanzas Corporativas,MBA-102,4.5,4,2024-1,Aprobado
+GRD009,STU002,Gestión de Operaciones,MBA-103,4.3,4,2024-1,Aprobado
+GRD010,STU002,Marketing Management,MBA-104,4.6,4,2024-1,Aprobado
+GRD011,STU002,Liderazgo y Gestión de Equipos,MBA-105,4.8,4,2024-1,Aprobado
+GRD012,STU003,Fundamentos de Big Data,BDA-101,4.4,3,2024-1,Aprobado
+GRD013,STU003,Estadística Avanzada,BDA-102,4.1,3,2024-1,Aprobado
+GRD014,STU003,Machine Learning,BDA-103,4.5,3,2024-1,Aprobado
+GRD015,STU003,Visualización de Datos,BDA-104,4.7,3,2024-1,Aprobado
+GRD016,STU003,Python para Data Science,BDA-105,4.6,3,2024-1,Aprobado
+GRD017,STU003,Business Intelligence,BDA-106,4.3,3,2024-1,Aprobado
+GRD018,STU004,Transformación Digital,TDE-101,4.8,3,2024-1,Aprobado
+GRD019,STU004,Innovación y Disrupción,TDE-102,4.5,3,2024-1,Aprobado
+GRD020,STU004,Tecnologías Emergentes,TDE-103,4.6,3,2024-1,Aprobado
+GRD021,STU004,Gestión del Cambio,TDE-104,4.7,3,2024-1,Aprobado
+GRD022,STU004,Cloud Computing,TDE-105,4.4,3,2024-1,Aprobado
+GRD023,STU005,Análisis Financiero,FIN-101,4.6,3,2024-1,Aprobado
+GRD024,STU005,Mercados de Capitales,FIN-102,4.4,3,2024-1,Aprobado
+GRD025,STU005,Valoración de Empresas,FIN-103,4.5,3,2024-1,Aprobado
+GRD026,STU005,Derivados Financieros,FIN-104,4.2,3,2024-1,Aprobado
+GRD027,STU005,Gestión de Riesgos,FIN-105,4.7,3,2024-1,Aprobado
+GRD028,STU005,Finanzas Corporativas Avanzadas,FIN-106,4.3,3,2024-1,Aprobado
+GRD029,STU006,Gestión Estratégica del Talento,RH-101,4.5,3,2024-1,Aprobado
+GRD030,STU006,Desarrollo Organizacional,RH-102,4.6,3,2024-1,Aprobado
+GRD031,STU006,Compensación y Beneficios,RH-103,4.3,2,2024-1,Aprobado
+GRD032,STU006,Selección y Reclutamiento,RH-104,4.7,3,2024-1,Aprobado
+GRD033,STU006,Clima y Cultura Organizacional,RH-105,4.8,3,2024-1,Aprobado
+GRD034,STU006,Legislación Laboral,RH-106,4.2,2,2024-1,Aprobado
+GRD035,STU007,Marketing Estratégico,MKT-101,4.3,3,2024-1,Aprobado
+GRD036,STU007,Analítica Digital,MKT-102,4.5,3,2024-1,Aprobado
+GRD037,STU007,Estrategias de Contenido,MKT-103,4.6,3,2024-1,Aprobado
+GRD038,STU007,SEO y SEM,MKT-104,4.4,3,2024-1,Aprobado
+GRD039,STU007,Redes Sociales y Comunidades,MKT-105,4.7,3,2024-1,Aprobado
+GRD040,STU007,Email Marketing,MKT-106,4.2,3,2024-1,Aprobado
+GRD041,STU008,Liderazgo Transformacional,LID-101,4.8,3,2023-2,Aprobado
+GRD042,STU008,Toma de Decisiones Estratégicas,LID-102,4.6,3,2023-2,Aprobado
+GRD043,STU008,Negociación Avanzada,LID-103,4.7,3,2023-2,Aprobado
+GRD044,STU008,Gestión del Cambio Organizacional,LID-104,4.5,3,2023-2,Aprobado
+GRD045,STU008,Comunicación Ejecutiva,LID-105,4.9,3,2023-2,Aprobado
+GRD046,STU008,Liderazgo Transformacional,LID-101,4.7,3,2024-1,Aprobado
+GRD047,STU008,Toma de Decisiones Estratégicas,LID-102,4.8,3,2024-1,Aprobado
+GRD048,STU008,Negociación Avanzada,LID-103,4.6,3,2024-1,Aprobado
+GRD049,STU009,Dirección Estratégica,MBA-101,4.6,4,2023-2,Aprobado
+GRD050,STU009,Finanzas Corporativas,MBA-102,4.4,4,2023-2,Aprobado
+GRD051,STU009,Gestión de Operaciones,MBA-103,4.5,4,2023-2,Aprobado
+GRD052,STU009,Marketing Management,MBA-104,4.7,4,2023-2,Aprobado
+GRD053,STU009,Liderazgo y Gestión de Equipos,MBA-105,4.8,4,2023-2,Aprobado
+GRD054,STU009,Dirección Estratégica,MBA-101,4.5,4,2024-1,Aprobado
+GRD055,STU009,Finanzas Corporativas,MBA-102,4.6,4,2024-1,Aprobado
+GRD056,STU009,Gestión de Operaciones,MBA-103,4.4,4,2024-1,Aprobado
+GRD057,STU010,Fundamentos de Big Data,BDA-101,4.5,3,2024-1,Aprobado
+GRD058,STU010,Estadística Avanzada,BDA-102,4.3,3,2024-1,Aprobado
+GRD059,STU010,Machine Learning,BDA-103,4.6,3,2024-1,Aprobado
+GRD060,STU010,Visualización de Datos,BDA-104,4.8,3,2024-1,Aprobado
+GRD061,STU010,Python para Data Science,BDA-105,4.7,3,2024-1,Aprobado
+GRD062,STU010,Business Intelligence,BDA-106,4.4,3,2024-1,Aprobado
+GRD063,STU011,Análisis Financiero,FIN-101,4.7,3,2023-2,Aprobado
+GRD064,STU011,Mercados de Capitales,FIN-102,4.5,3,2023-2,Aprobado
+GRD065,STU011,Valoración de Empresas,FIN-103,4.6,3,2023-2,Aprobado
+GRD066,STU011,Derivados Financieros,FIN-104,4.4,3,2023-2,Aprobado
+GRD067,STU011,Gestión de Riesgos,FIN-105,4.8,3,2023-2,Aprobado
+GRD068,STU011,Finanzas Corporativas Avanzadas,FIN-106,4.5,3,2023-2,Aprobado
+GRD069,STU012,Transformación Digital,TDE-101,4.6,3,2024-1,Aprobado
+GRD070,STU012,Innovación y Disrupción,TDE-102,4.7,3,2024-1,Aprobado
+GRD071,STU012,Tecnologías Emergentes,TDE-103,4.5,3,2024-1,Aprobado
+GRD072,STU012,Gestión del Cambio,TDE-104,4.8,3,2024-1,Aprobado
+GRD073,STU012,Cloud Computing,TDE-105,4.4,3,2024-1,Aprobado
+GRD074,STU014,Gestión Estratégica del Talento,RH-101,4.4,3,2024-1,Aprobado
+GRD075,STU014,Desarrollo Organizacional,RH-102,4.5,3,2024-1,Aprobado
+GRD076,STU014,Compensación y Beneficios,RH-103,4.3,2,2024-1,Aprobado
+GRD077,STU014,Selección y Reclutamiento,RH-104,4.6,3,2024-1,Aprobado
+GRD078,STU014,Clima y Cultura Organizacional,RH-105,4.7,3,2024-1,Aprobado
+GRD079,STU014,Legislación Laboral,RH-106,4.2,2,2024-1,Aprobado
+GRD080,STU015,Liderazgo Transformacional,LID-101,4.7,3,2023-2,Aprobado
+GRD081,STU015,Toma de Decisiones Estratégicas,LID-102,4.8,3,2023-2,Aprobado
+GRD082,STU015,Negociación Avanzada,LID-103,4.6,3,2023-2,Aprobado
+GRD083,STU015,Gestión del Cambio Organizacional,LID-104,4.7,3,2023-2,Aprobado
+GRD084,STU015,Comunicación Ejecutiva,LID-105,4.9,3,2023-2,Aprobado
+GRD085,STU015,Liderazgo Transformacional,LID-101,4.8,3,2024-1,Aprobado
+GRD086,STU015,Toma de Decisiones Estratégicas,LID-102,4.7,3,2024-1,Aprobado
+GRD087,STU015,Negociación Avanzada,LID-103,4.9,3,2024-1,Aprobado

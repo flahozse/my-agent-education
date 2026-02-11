@@ -1,0 +1,16 @@
+student_id,full_name,email,phone,document_number,program_name,enrollment_date,status
+STU001,María González Rodríguez,maria.gonzalez@esic.edu.co,+57 310 234 5678,1234567890,Máster en Marketing Digital,2024-01-15,Activo
+STU002,Juan Carlos Pérez López,juan.perez@esic.edu.co,+57 311 345 6789,2345678901,Máster en Dirección de Empresas (MBA),2024-01-15,Activo
+STU003,Ana María Martínez Silva,ana.martinez@esic.edu.co,+57 312 456 7890,3456789012,Máster en Big Data y Business Analytics,2024-02-01,Activo
+STU004,Carlos Andrés Torres Gómez,carlos.torres@esic.edu.co,+57 313 567 8901,4567890123,Programa Ejecutivo en Transformación Digital,2024-02-01,Activo
+STU005,Laura Patricia Sánchez Muñoz,laura.sanchez@esic.edu.co,+57 314 678 9012,5678901234,Máster en Finanzas Corporativas,2024-01-15,Activo
+STU006,Diego Fernando Ramírez Castro,diego.ramirez@esic.edu.co,+57 315 789 0123,6789012345,Máster en Recursos Humanos y Gestión del Talento,2024-02-15,Activo
+STU007,Sofía Valentina Herrera Díaz,sofia.herrera@esic.edu.co,+57 316 890 1234,7890123456,Máster en Marketing Digital,2024-02-15,Activo
+STU008,Miguel Ángel Vargas Ruiz,miguel.vargas@esic.edu.co,+57 317 901 2345,8901234567,Programa Ejecutivo en Liderazgo Estratégico,2023-08-01,Activo
+STU009,Camila Andrea Moreno Cruz,camila.moreno@esic.edu.co,+57 318 012 3456,9012345678,Máster en Dirección de Empresas (MBA),2023-08-01,Activo
+STU010,Alejandro José Jiménez Ospina,alejandro.jimenez@esic.edu.co,+57 319 123 4567,1012345678,Máster en Big Data y Business Analytics,2024-01-15,Activo
+STU011,Valentina Restrepo Arias,valentina.restrepo@esic.edu.co,+57 320 234 5678,1123456789,Máster en Finanzas Corporativas,2023-08-01,Graduado
+STU012,Andrés Felipe García Mendoza,andres.garcia@esic.edu.co,+57 321 345 6789,1234567891,Programa Ejecutivo en Transformación Digital,2024-02-01,Activo
+STU013,Isabella Martín Corrales,isabella.martin@esic.edu.co,+57 322 456 7890,1345678902,Máster en Marketing Digital,2024-01-15,Inactivo
+STU014,Daniel Eduardo López Valencia,daniel.lopez@esic.edu.co,+57 323 567 8901,1456789013,Máster en Recursos Humanos y Gestión del Talento,2024-02-15,Activo
+STU015,Carolina Mejía Botero,carolina.mejia@esic.edu.co,+57 324 678 9012,1567890124,Programa Ejecutivo en Liderazgo Estratégico,2023-08-01,Activo
