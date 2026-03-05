@@ -3,6 +3,7 @@ from .prompt import return_instructions_root
 #from callback_logging import log_query_to_model, log_model_response
 
 from .tools import (
+    load_student_context,
     get_student_info,
     get_payment_status,
     get_enrollment_status,
@@ -27,15 +28,19 @@ root_agent = Agent(
     #before_model_callback=log_query_to_model,
     #after_model_callback=log_model_response,
     tools=[
-        # Web search tools (use for ESIC information, program details, admission process, etc.)
-        search_esic_information,  # Prioritizes ESIC official websites
+        # Web search tools (use for Education information, program details, admission process, etc.)
+        search_esic_information,  # Prioritizes official websites
         search_web,                # General web search
         # Student identification tools (use these first!)
         check_has_student_identifier,
         set_student_identifier,
         get_stored_student_identifier,
         clear_student_identifier,
-        # Student information query tools (require identifier to be set)
+        # RAG context loader: call ONCE after set_student_identifier.
+        # Fetches all student data from BigQuery in a single query and
+        # caches it in session state for the rest of the conversation.
+        load_student_context,
+        # Student information tools (read from session state, NOT BigQuery)
         get_student_info,
         get_payment_status,
         get_enrollment_status,

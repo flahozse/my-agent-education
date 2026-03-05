@@ -1,12 +1,12 @@
-# Education Assistant Agent
+# Education Assistant Agent - Education Corporate
 
-Agente de inteligencia artificial desarrollado con **Google Agent Development Kit (ADK)** para el Servicio de Atención al Cliente (SAC) de Educational Institution. Este agente proporciona atención automatizada a estudiantes y aspirantes de programas de Máster y formación ejecutiva.
+Agente de inteligencia artificial desarrollado con **Google Agent Development Kit (ADK)** para el Servicio de Atención al Cliente (SAC) de Educación Corporate. Este agente proporciona atención automatizada a estudiantes y aspirantes de programas de Máster y formación ejecutiva.
 
 ## Descripción
 
 El Education Assistant es un asistente virtual conversacional que combina:
 
-- **Búsqueda web inteligente** para información pública de ESIC (programas académicos, admisiones, precios)
+- **Búsqueda web inteligente** para información pública de Educación (programas académicos, admisiones, precios)
 - **Acceso a datos personalizados** de estudiantes mediante BigQuery (matrículas, pagos, calificaciones)
 - **Gestión de sesiones** que mantiene la identificación del estudiante durante toda la conversación
 - **Generación de certificaciones** automáticas
@@ -205,7 +205,7 @@ graph TD
 
 El asistente está configurado con las siguientes características:
 
-- **Rol**: Asistente Virtual de ESIC Corporate
+- **Rol**: Asistente Virtual de Educación Corporate
 - **Tono**: Profesional pero cercano, servicial y eficiente
 - **Idioma**: Español
 - **Objetivo**: Primer punto de contacto para resolver dudas y gestionar solicitudes
@@ -303,7 +303,7 @@ Este proyecto es parte del ADK Starter Pack de Google Cloud.
 
 ## Autores
 
-- Desarrollado en el contexto de ESIC Corporate
+- Desarrollado en el contexto de Educación Corporate
 - Framework: Google Agent Development Kit Team
 
 ---

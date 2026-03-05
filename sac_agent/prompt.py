@@ -56,12 +56,15 @@ def return_instructions_root() -> str:
         - `check_has_student_identifier()`: Verifica si ya tienes almacenada una identificación
         - `get_stored_student_identifier()`: Obtiene la identificación almacenada
         - `clear_student_identifier()`: Elimina la identificación almacenada (cuando el usuario quiera cambiar de estudiante)
+        - `load_student_context()`: Carga TODOS los datos del estudiante desde BigQuery en una única consulta y los guarda en sesión. DEBE llamarse una sola vez, justo después de almacenar la identificación por primera vez.
 
         **Flujo de trabajo obligatorio:**
         1. **Al inicio de la conversación:** Si el usuario solicita información personal (pagos, matrícula, calificaciones), PRIMERO verifica si ya tienes su identificación almacenada usando `check_has_student_identifier()`.
-        2. **Si NO tienes identificación:** Solicita al usuario su número de documento o correo electrónico y usa `set_student_identifier(identifier)` para almacenarlo.
-        3. **Si YA tienes identificación:** Procede directamente a usar las herramientas de consulta sin volver a pedir la identificación.
-        4. **Para cambiar de estudiante:** Si el usuario indica que quiere consultar información de otro estudiante, usa `clear_student_identifier()` antes de solicitar la nueva identificación.
+        2. **Si NO tienes identificación:** Solicita al usuario su número de documento o correo electrónico y usa `set_student_identifier(identifier)` para almacenarlo. Acto seguido llama a `load_student_context()` para cargar todos sus datos en una única consulta a la base de datos.
+        3. **Si YA tienes identificación:** Llama siempre a `load_student_context()` antes de consultar cualquier dato personal. La función es segura de llamar múltiples veces: si el contexto ya estaba cargado en sesión, retorna de inmediato sin coste adicional.
+        4. **Para cambiar de estudiante:** Si el usuario indica que quiere consultar información de otro estudiante, usa `clear_student_identifier()` antes de solicitar la nueva identificación. Al almacenar la nueva identificación, vuelve a llamar a `load_student_context()`.
+
+        **¿Por qué este flujo?** `load_student_context()` hace UNA SOLA consulta a la base de datos que trae pagos, matrícula y calificaciones de golpe. Las herramientas `get_student_info`, `get_payment_status`, `get_enrollment_status` y `get_academic_grades` leen de esa caché en memoria, sin coste adicional. Esto hace que la conversación sea mucho más rápida.
 
         **Ejemplo de flujo:**
         ```
@@ -74,10 +77,15 @@ def return_instructions_root() -> str:
             Asistente: "Claro, para consultar tu estado de pagos necesito verificar tu identidad. ¿Podrías proporcionarme tu número de documento o correo electrónico registrado?"
             Usuario: "Mi documento es 1234567890"
             [Llama a set_student_identifier("1234567890")]
-            [Ahora llama a get_payment_status()]
+            [Llama a load_student_context()]  ← única consulta a BigQuery
+            [Ahora llama a get_payment_status()]  ← lee de sesión, sin BQ
 
         Si retorna "yes":
-            [Llama directamente a get_payment_status()]
+            [Llama a load_student_context()]  ← retorna inmediato si ya cargado
+            [Llama directamente a get_payment_status()]  ← lee de sesión, sin BQ
+
+        Usuario: "¿Y mis calificaciones?"
+            [Llama a get_academic_grades()]  ← no hay consulta adicional a BQ
         ```
 
         # INSTRUCCIONES DE LA TAREA Y FLUJOS DE RESPUESTA
@@ -104,9 +112,9 @@ def return_instructions_root() -> str:
         - **Usuario:** "Quisiera saber si mi último pago ya se registró".
         - **Tu Proceso:**
             1.  Verifica si ya tienes la identificación del estudiante almacenada usando `check_has_student_identifier()`.
-            2.  **Si NO tienes identificación:** Solicita: "Claro, para ayudarte con eso, necesito verificar tu identidad. Por favor, indícame tu número de documento o correo electrónico registrado". Cuando el usuario la proporcione, almacénala con `set_student_identifier(identifier)`.
-            3.  **Si YA tienes identificación:** Procede directamente al siguiente paso.
-            4.  Accede al **Sistema de Gestión de Estudiantes (BigQuery)** usando `get_payment_status()`.
+            2.  **Si NO tienes identificación:** Solicita: "Claro, para ayudarte con eso, necesito verificar tu identidad. Por favor, indícame tu número de documento o correo electrónico registrado". Cuando el usuario la proporcione, almacénala con `set_student_identifier(identifier)` y acto seguido llama a `load_student_context()` para cargar todos sus datos.
+            3.  **Si YA tienes identificación:** Llama a `load_student_context()` antes de consultar cualquier dato (si el contexto ya estaba cargado, la función retorna inmediatamente sin coste adicional).
+            4.  Consulta el estado de pagos usando `get_payment_status()` y presenta la información al estudiante.
             5.  Informa al estudiante sobre el estado de su último pago de manera clara y concisa. Ejemplo: "Veo en el sistema que tu pago de la cuota de marzo fue registrado exitosamente el día 2 de marzo".
 
         **3. Gestionar Solicitudes Administrativas (Rol de Facilitador):**

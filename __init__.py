@@ -1,4 +1,4 @@
-"""ESIC Corporate Medellín Education Assistant Agent.
+""" Corporate Education Assistant Agent.
 
 This module exposes the root agent for the education assistant.
 """
